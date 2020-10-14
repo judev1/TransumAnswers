@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+
+	"name": "Transum Answers",
+	"description": "Auto fills all answers on a page for Transum",
+	"version": "1.0",
+
+	"browser_action": {"default_icon": "potato.png"},
+	"permissions": ["activeTab"],
+	
+	"icons": {
+        "128": "potato.png"
+	},
+
+	"content_scripts": [{
+		"matches": ["https://www.transum.org/*"],
+		"js": ["stuff.js"]
+	}]
+}
